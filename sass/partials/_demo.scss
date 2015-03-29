@@ -1,5 +1,5 @@
 /* demo-ct */
-
+.example,
 .demo-ct {
   margin-bottom: 20px;
 }
@@ -16,6 +16,7 @@
 
 .demo-tab-nav-link {
   @extend .block;
+  @extend .trans;
   
   font-size: 16px;
   line-height: 40px;
@@ -38,9 +39,16 @@
   }
 }
 
-.demo-tab-con {
+.demo-tab-con-ct {
+  @extend .color-set-5;
   border: 1px solid $color-set-1-fg-4;
   border-top: 0;
-  padding: 15px;
+  padding: 5px 20px;
 }
 
+.demo-tab-con {
+  @extend .hide;
+  &.show {
+    @extend .show;
+  }
+}

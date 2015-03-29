@@ -13,6 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Css -->
 		<link media="screen, projection" rel="stylesheet" href="css/lib/pure-min.css">
+		<link media="screen, projection" rel="stylesheet" href="css/lib/sh/shCore.css">
+		<link media="screen, projection" rel="stylesheet" href="css/lib/sh/shCoreDefault.css">
 		<link media="screen, projection" rel="stylesheet" href="css/main.css">
 		<!--[if IE]>
 		<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -28,64 +30,233 @@
 			
 			<div class="demo-ct">
 				<h2>Submenu</h2>
-				<ul class="demo-tab-nav">
-					<li class="demo-tab-nav-item">
-						<a class="demo-tab-nav-link active">Demo</a>
-					</li>
-					<li class="demo-tab-nav-item">
-						<a class="demo-tab-nav-link">HTML</a>
-					</li>
-					<li class="demo-tab-nav-item">
-						<a class="demo-tab-nav-link">CSS</a>
-					</li>
-					<li class="demo-tab-nav-item">
-						<a class="demo-tab-nav-link">JavaScript</a>
-					</li>
-				</ul>
-				<div class="demo-tab-con">
+				<h3>Example</h3>
+				<div class="demo">
 					<ul class="main-nav">
-						<li class="main-nav-item">
-							<a class="main-nav-link" href="#">Menu-Item-1</a>
-						</li>
-						<li class="main-nav-item">
-							<a class="main-nav-link" href="#">Menu-Item-2</a>
-							<ul class="sub-menu">
-								<li class="sub-menu-item">
-									<a class="sub-menu-link">Sub-menu-1</a>
-								</li>
-								<li class="sub-menu-item">
-									<a class="sub-menu-link">Sub-menu-1</a>
-								</li>
-								<li class="sub-menu-item">
-									<a class="sub-menu-link">Sub-menu-1</a>
-								</li>
-							</ul>
-						</li>
-						<li class="main-nav-item">
-							<a class="main-nav-link" href="#">Menu-Item-3</a>
-						</li>
-						<li class="main-nav-item">
-							<a class="main-nav-link" href="#">Menu-Item-4</a>
-							<ul class="sub-menu">
-								<li class="sub-menu-item">
-									<a class="sub-menu-link">Sub-menu-1</a>
-								</li>
-								<li class="sub-menu-item">
-									<a class="sub-menu-link">Sub-menu-1</a>
-								</li>
-								<li class="sub-menu-item">
-									<a class="sub-menu-link">Sub-menu-1</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
+							<li class="main-nav-item">
+								<a class="main-nav-link" href="#">Menu-Item-1</a>
+							</li>
+							<li class="main-nav-item">
+								<a class="main-nav-link main-nav-link-has-submenu" href="#">Menu-Item-2</a>
+								<ul class="sub-menu">
+									<li class="sub-menu-item">
+										<a class="sub-menu-link">Sub-menu-1</a>
+									</li>
+									<li class="sub-menu-item">
+										<a class="sub-menu-link">Sub-menu-1</a>
+									</li>
+									<li class="sub-menu-item">
+										<a class="sub-menu-link">Sub-menu-1</a>
+									</li>
+								</ul>
+							</li>
+							<li class="main-nav-item">
+								<a class="main-nav-link" href="#">Menu-Item-3</a>
+							</li>
+							<li class="main-nav-item">
+								<a class="main-nav-link main-nav-link-has-submenu" href="#">Menu-Item-4</a>
+								<ul class="sub-menu">
+									<li class="sub-menu-item">
+										<a class="sub-menu-link">Sub-menu-1</a>
+									</li>
+									<li class="sub-menu-item">
+										<a class="sub-menu-link">Sub-menu-1</a>
+									</li>
+									<li class="sub-menu-item">
+										<a class="sub-menu-link">Sub-menu-1</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<h3>Code</h3>
+					<div class="demo-tab-ct">
+						<ul class="demo-tab-nav">
+							<li class="demo-tab-nav-item">
+								<a class="demo-tab-nav-link active" href="#tab-html">HTML</a>
+							</li>
+							<li class="demo-tab-nav-item">
+								<a class="demo-tab-nav-link" href="#tab-scss">SCSS</a>
+							</li>
+							<li class="demo-tab-nav-item">
+								<a class="demo-tab-nav-link" href="#tab-css">CSS</a>
+							</li>
+							<li class="demo-tab-nav-item">
+								<a class="demo-tab-nav-link" href="#tab-js">JavaScript</a>
+							</li>
+						</ul>
+						<div class="demo-tab-con-ct">
+							<div class="demo-tab-con tab-html show">
+								<pre class="brush: html">
+								&lt;ul class=&quot;main-nav&quot;&gt;
+									&lt;li class=&quot;main-nav-item&quot;&gt;
+										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-1&lt;/a&gt;
+									&lt;/li&gt;
+									&lt;li class=&quot;main-nav-item&quot;&gt;
+										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-2&lt;/a&gt;
+										&lt;ul class=&quot;sub-menu&quot;&gt;
+											&lt;li class=&quot;sub-menu-item&quot;&gt;
+												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;sub-menu-item&quot;&gt;
+												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;sub-menu-item&quot;&gt;
+												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/li&gt;
+									&lt;li class=&quot;main-nav-item&quot;&gt;
+										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-3&lt;/a&gt;
+									&lt;/li&gt;
+									&lt;li class=&quot;main-nav-item&quot;&gt;
+										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-4&lt;/a&gt;
+										&lt;ul class=&quot;sub-menu&quot;&gt;
+											&lt;li class=&quot;sub-menu-item&quot;&gt;
+												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;sub-menu-item&quot;&gt;
+												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;sub-menu-item&quot;&gt;
+												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/li&gt;
+								&lt;/ul&gt;
+								</pre>
+							</div>
+							<div class="demo-tab-con tab-scss">
+								<pre class="brush: sass">
+									/* main-nav */
+									.main-nav {
+									  @extend .cf;
+									  @extend .color-set-secondary;
+									  height: 40px;
+									}
+
+									.main-nav-item {
+									  @extend .left;
+									  @extend .relative;
+
+									  .main-nav-link,
+									  .sub-menu-link  {
+									    &.active {
+									      background-color: $color-set-3-fg;
+									      color: $color-set-3-bg;
+									    }  
+									  }
+									}
+
+									.main-nav-link,
+									.sub-menu-link {
+									  @extend .block;
+									  @extend .trans;
+									  
+									  font-size: 14px;
+									  line-height: 40px;
+									  color: $color-set-3-fg;
+									  padding: 0 15px;
+
+									  &:hover {
+									    background-color: $color-set-3-fg;
+									    color: $color-set-3-bg;
+									  }
+									}
+
+									.sub-menu {
+									  @extend .color-set-secondary;
+									  @extend .absolute;
+									  @extend .hide;
+									  @extend .trans;
+									  
+
+									  top: 40px;
+									  left: 0;
+
+									  &.show {
+									    @extend .show;
+									  }
+									}
+								</pre>
+							</div>
+							<div class="demo-tab-con tab-css">
+								<pre class="brush: css">
+								/* main-nav */
+								.main-nav { height: 40px; }
+
+								.main-nav-item .main-nav-link.active,
+								.main-nav-item .sub-menu-link.active { 
+								 	background-color: white; 
+								 	color: #26a69a; 
+								 }
+
+								.main-nav-link, 
+								.sub-menu-link { 
+									font-size: 14px; 
+									line-height: 40px; 
+									color: white; padding: 0 15px; 
+								}
+
+								.main-nav-link:hover, 
+								.sub-menu-link:hover { 
+									background-color: white; color: #26a69a; 
+								}
+								.sub-menu { 
+									top: 40px; left: 0; 
+								}	
+								</pre>
+							</div>
+							<div class="demo-tab-con tab-js">
+								<pre class="brush: js">
+									// Submenu
+									(function($) {
+										$.fn.submenu = function() {
+											var obj = $(this),
+												submenu = obj.parent().find('ul');
+
+											function toggleSubMenu(e) {
+												e.preventDefault();
+												var $elm = $(this),
+													$elmSubmenu = $elm.parent().find('ul');
+
+												if(!$elm.hasClass('active')) {
+													if(obj.hasClass('active')) {
+														obj.removeClass('active');
+														submenu.removeClass('show');
+													}
+
+													$elm.addClass('active');
+													$elmSubmenu.addClass('show');
+												} else {
+													$elm.removeClass('active');
+													$elmSubmenu.removeClass('show');
+												}
+											}
+
+											obj.on('click', toggleSubMenu);
+										};
+
+									})(jQuery);
+
+									// Main js (trigger plugin in document ready event)
+									(function($) {
+										$('.main-nav-link').submenu();
+									})(jQuery);
+								</pre>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-		</div>
 		<!-- Js -->
 		<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
 		<script src="js/lib/jquery.js"></script>
+		<script src="js/lib/sh/shCore.js"></script>
+		<script src="js/lib/sh/shBrushJScript.js"></script>
+		<script src="js/lib/sh/shBrushSass.js"></script>
+		<script src="js/lib/sh/shBrushCss.js"></script>
+		<script src="js/lib/sh/shBrushXml.js"></script>
 		<script src="js/app/plugins.js"></script>
 		<script src="js/app/main.js"></script>
 	</body>

@@ -15,8 +15,10 @@
 					submenu.removeClass('show');
 				}
 
-				$elm.addClass('active');
-				$elmSubmenu.addClass('show');
+				if($elmSubmenu.length > 0) {
+					$elm.addClass('active');
+					$elmSubmenu.addClass('show');
+				}
 			} else {
 				$elm.removeClass('active');
 				$elmSubmenu.removeClass('show');

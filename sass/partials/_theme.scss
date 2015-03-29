@@ -18,6 +18,9 @@ $color-set-3-fg: #fff;
 $color-set-4-bg: #e8e6e3;
 $color-set-4-fg: #555;
 
+$color-set-5-bg: #fff;
+$color-set-5-fg: #555;
+
 
 @mixin set-color($bg, $fg) {
   background-color: $bg;
@@ -65,6 +68,10 @@ a {
 
 .color-set-4 {
   @include set-color($color-set-4-bg, $color-set-4-fg);
+}
+
+.color-set-5 {
+  @include set-color($color-set-5-bg, $color-set-5-fg);
 }
 
 .base-link {
