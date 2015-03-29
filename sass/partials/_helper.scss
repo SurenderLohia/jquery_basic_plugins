@@ -1,0 +1,183 @@
+/* -- Helper -- */
+.left {
+  float:left;
+}
+.right {
+  float:right;
+}
+
+/* clearfix */
+.cf:before, .cf:after {
+  display:table;
+  content:" ";
+}
+.cf:after {
+  clear:both;
+}
+
+/* margins */
+.mt-4 {
+  margin-top:4px;
+}
+.mb5 {
+  margin-bottom:5px;
+}
+.mb10 {
+  margin-bottom:10px;
+}
+
+.mb20 {
+  margin-bottom:20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+.mor-bot-reset {
+  margin-bottom:0;
+}
+
+/* paddings */
+.pt-0 {
+  padding-top: 0;  
+}
+
+.ptb-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.ptb-50 {
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pt-70, 
+.ptb-70 {
+  padding-top: 70px;
+}
+
+.pb-70,
+.ptb-70 {
+  padding-bottom: 70px;
+}
+
+.center-block {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tar {
+  text-align:right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.text-trans-auto {
+  text-transform: none;
+}
+
+/* reset */
+.last {
+  margin-right:0;
+  padding-right:0;
+}
+
+.first {
+  margin-left:0;
+  padding-left:0;
+}
+
+.top {
+  margin-top:0;
+  padding-top:0;
+}
+
+.bottom {
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.mor-top-bot-reset {
+  margin-top:0;
+  margin-bottom:0;
+}
+
+// Colors
+.grey-bg {
+  background-color: grey;
+}
+
+/* positions */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+// Typography
+.bold {
+  font-weight: bold;
+}
+
+.expand {
+  width:100%;
+}
+
+
+// Animation
+.trans {
+  @include transition(all 200ms ease);
+}
+
+/* For Show Hide */
+.show,
+.block {
+  display:block;
+}
+
+.hide {
+  display:none;
+}
+
+.i-block {
+  display: inline-block;
+}
+
+.bor-top {
+  border-top: 1px solid #ccc;
+}
+
+

@@ -1,0 +1,10 @@
+// Icons
+$icon-size: 40px;
+
+.icon {
+  @extend .i-block;
+  width:$icon-size;
+  height:$icon-size;
+  text-align:center;
+}
+

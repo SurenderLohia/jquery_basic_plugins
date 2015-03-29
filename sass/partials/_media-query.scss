@@ -1,0 +1,80 @@
+/* Media Query */
+
+// Variables
+$mobile-por           : 320px;
+$mobile-land          : 480px;
+$mobile               : 767px;
+$tablet-por           : 768px;
+$tablet               : 1024px;
+
+// Media query function
+@mixin respond-to($media) {
+  // Mobile portrait
+  @if $media == mobile-por {
+    @media only screen and (max-width: $mobile-land - 1) {
+      @content;
+    }
+  }
+  
+  // Mobile Ladscape
+  @else if $media == mobile-land {
+    @media only screen and (max-width: $mobile-land) {
+      @content;
+    }
+  }
+  
+  // Mobile
+  @else if $media == mobile {
+    @media only screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+  
+  // Mobile Ladscape
+  @else if $media == mobile-land-up {
+    @media only screen and (min-width: $mobile-land) {
+      @content;
+    }
+  }
+  
+  // Mobile and tablet portrait 
+  @else if $media == mobile-tablet-port {
+    @media only screen and (max-width: $tablet - 1) {
+      @content;
+    }
+  }
+  
+  // Mobile and tablet portrait 
+  @else if $media == mobile-tablet-port {
+    @media only screen and (max-width: $tablet - 1) {
+      @content;
+    }
+  }
+  
+  // Tablet portrait 
+  @else if $media == tablet-port {
+    @media only screen and (min-width: $tablet-por) and (max-width: $tablet - 1) {
+      @content;
+    }
+  }
+  
+  // Tablet 
+  @else if $media == tablet {
+    @media only screen and (min-width: $tablet-por) and (max-width: $tablet) {
+      @content;
+    }
+  }
+  
+  // Tablet and up
+  @else if $media == tablet-up {
+    @media only screen and (min-width: $tablet-por) {
+      @content;
+    }
+  }
+}
+
+
+
+     
+
+

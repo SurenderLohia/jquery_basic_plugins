@@ -1,0 +1,148 @@
+/* Theme */
+a { color: white; }
+
+.color-set-base, body, .color-set-1 { background-color: #fcfcfc; color: #333333; }
+
+.color-set-primary, .color-set-2 { background-color: #ee6e73; color: white; }
+
+.color-set-secondary, .main-nav, .sub-menu, .color-set-3 { background-color: #26a69a; color: white; }
+
+.color-set-4 { background-color: #e8e6e3; color: #555555; }
+
+.base-link { color: #26a69a; }
+.base-link:visited { color: #1c7d74; }
+.base-link:focus { color: #219187; }
+.base-link:hover { color: #219187; }
+.base-link:active { color: #1c7d74; }
+
+.base-fg-2, .main-heading { color: #ee6e73; }
+
+.base-fg-3 { color: #26a69a; }
+
+/* -- Base -- */
+body { line-height: 1.4; height: 100%; font-family: Helvetica,"Open Sans", Arial, sans-serif; font-size: 16px; }
+
+a { cursor: pointer; text-decoration: none; }
+a:focus { outline: 0; }
+a img { outline: none; }
+
+img { vertical-align: middle; max-width: 100%; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+/* -- Layout -- */
+.wrap { width: 100%; max-width: 768px; margin: 0 auto; }
+
+/* -- Typography -- */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+/* demo-ct */
+.demo-ct { margin-bottom: 20px; }
+
+.demo-tab-nav { border: 1px solid #ee6e73; }
+
+.demo-tab-nav-link { font-size: 16px; line-height: 40px; color: #ee6e73; padding: 2px 20px 0; border-bottom: 5px solid #fcfcfc; }
+.demo-tab-nav-link:hover { color: #ea4e54; }
+.demo-tab-nav-link:active { background-color: #ee6e73; border-color: #ee6e73; color: #fcfcfc; }
+.demo-tab-nav-link.active { border-color: #ee6e73; }
+
+.demo-tab-con { border: 1px solid #cccccc; border-top: 0; padding: 15px; }
+
+/* main-nav */
+.main-nav { height: 40px; }
+
+.main-nav-item .main-nav-link.active, .main-nav-item .sub-menu-link.active { background-color: white; color: #26a69a; }
+
+.main-nav-link, .sub-menu-link { font-size: 14px; line-height: 40px; color: white; padding: 0 15px; }
+.main-nav-link:hover, .sub-menu-link:hover { background-color: white; color: #26a69a; }
+
+.sub-menu { top: 40px; left: 0; }
+
+/* -- Helper -- */
+.left, .demo-tab-nav-item, .main-nav-item { float: left; }
+
+.right { float: right; }
+
+/* clearfix */
+.cf:before, .demo-tab-nav:before, .main-nav:before, .cf:after, .demo-tab-nav:after, .main-nav:after { display: table; content: " "; }
+
+.cf:after, .demo-tab-nav:after, .main-nav:after { clear: both; }
+
+/* margins */
+.mt-4 { margin-top: 4px; }
+
+.mb5 { margin-bottom: 5px; }
+
+.mb10 { margin-bottom: 10px; }
+
+.mb20 { margin-bottom: 20px; }
+
+.mr-20 { margin-right: 20px; }
+
+.mor-bot-reset { margin-bottom: 0; }
+
+/* paddings */
+.pt-0 { padding-top: 0; }
+
+.ptb-5 { padding-top: 5px; padding-bottom: 5px; }
+
+.pt-20 { padding-top: 20px; }
+
+.pt-30 { padding-top: 30px; }
+
+.pt-40 { padding-top: 40px; }
+
+.pb-40 { padding-bottom: 40px; }
+
+.ptb-50 { padding-top: 50px; padding-bottom: 50px; }
+
+.pb-60 { padding-bottom: 60px; }
+
+.pt-70, .ptb-70 { padding-top: 70px; }
+
+.pb-70, .ptb-70 { padding-bottom: 70px; }
+
+.center-block { margin-left: auto; margin-right: auto; }
+
+.tar { text-align: right; }
+
+.text-center { text-align: center; }
+
+.text-left { text-align: left; }
+
+.upper-case { text-transform: uppercase; }
+
+.text-trans-auto { text-transform: none; }
+
+/* reset */
+.last { margin-right: 0; padding-right: 0; }
+
+.first { margin-left: 0; padding-left: 0; }
+
+.top { margin-top: 0; padding-top: 0; }
+
+.bottom { margin-bottom: 0; padding-bottom: 0; }
+
+.mor-top-bot-reset { margin-top: 0; margin-bottom: 0; }
+
+.grey-bg { background-color: grey; }
+
+/* positions */
+.relative, .main-nav-item { position: relative; }
+
+.absolute, .sub-menu { position: absolute; }
+
+.bold { font-weight: bold; }
+
+.expand { width: 100%; }
+
+.trans, .main-nav-link, .sub-menu-link, .sub-menu { -webkit-transition: all 200ms ease; -moz-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease; }
+
+/* For Show Hide */
+.show, .sub-menu.show, .block, .demo-tab-nav-link, .main-nav-link, .sub-menu-link { display: block; }
+
+.hide, .sub-menu { display: none; }
+
+.i-block { display: inline-block; }
+
+.bor-top { border-top: 1px solid #ccc; }

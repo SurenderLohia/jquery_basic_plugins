@@ -1,0 +1,73 @@
+/* -- Buttons -- */
+$btn-radius: 3;
+
+.btn {
+    @extend .font-w-3;
+    @extend .upper-case;
+    @include border-radius(3 + px);
+    @include transition(all 200ms ease);
+    
+    border:0;
+    display:inline-block;
+    line-height:20px;
+    padding:10px 15px;
+    text-align: center;
+    font-size: 15px;
+
+    strong {
+        @extend .font-w-5;
+    }
+}
+
+.btn-large {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn-small {
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.btn-group {
+    @extend .left;    
+    @extend .text-trans-auto;
+    @include border-radius(0);
+}
+
+.btn-group-first {
+    @include border-radius(4px 0 0 4px);
+}
+
+.btn-group-last {
+    @include border-radius(0 4px 4px 0);
+}
+
+.btn-primary {
+    @extend .btn-color-set-4;
+}
+
+.btn-large-2-ct {
+    @extend .text-center;
+    @extend .left;
+    margin-left: 238px;
+    font-size: 10px;
+    width: 180px;
+}
+
+.btn-large-2 {
+    @extend .font-w-7;
+    @extend .block;
+
+    @include border-radius(8px);
+    padding-top: 17px;
+    font-size: 25px;
+}
+
+.btn-large-2-small-text {
+    @extend .font-w-5;
+    font-size: 12px;
+}
+
+

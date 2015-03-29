@@ -1,0 +1,52 @@
+/* main-nav */
+.main-nav {
+  @extend .cf;
+  @extend .color-set-secondary;
+  height: 40px;
+}
+
+.main-nav-item {
+  @extend .left;
+  @extend .relative;
+
+  .main-nav-link,
+  .sub-menu-link  {
+    &.active {
+      background-color: $color-set-3-fg;
+      color: $color-set-3-bg;
+    }  
+  }
+}
+
+.main-nav-link,
+.sub-menu-link {
+  @extend .block;
+  @extend .trans;
+  
+  font-size: 14px;
+  line-height: 40px;
+  color: $color-set-3-fg;
+  padding: 0 15px;
+
+  &:hover {
+    background-color: $color-set-3-fg;
+    color: $color-set-3-bg;
+  }
+}
+
+.sub-menu {
+  @extend .color-set-secondary;
+  @extend .absolute;
+  @extend .hide;
+  @extend .trans;
+  
+
+  top: 40px;
+  left: 0;
+
+  &.show {
+    @extend .show;
+  }
+}
+
+

@@ -1,0 +1,46 @@
+/* demo-ct */
+
+.demo-ct {
+  margin-bottom: 20px;
+}
+
+.demo-tab-nav {
+  @extend .cf;
+
+  border: 1px solid $color-set-1-fg-2;
+}
+
+.demo-tab-nav-item {
+  @extend .left;
+}
+
+.demo-tab-nav-link {
+  @extend .block;
+  
+  font-size: 16px;
+  line-height: 40px;
+  color: $color-set-1-fg-2;
+  padding: 2px 20px 0;
+  border-bottom: 5px solid $color-set-1-bg;
+
+  &:hover {
+    color: darken($color-set-1-fg-2, 7%);
+  }
+
+  &:active {
+    background-color: $color-set-1-fg-2;
+    border-color: $color-set-1-fg-2;
+    color: $color-set-1-bg;
+  }
+
+  &.active {
+    border-color: $color-set-1-fg-2;
+  }
+}
+
+.demo-tab-con {
+  border: 1px solid $color-set-1-fg-4;
+  border-top: 0;
+  padding: 15px;
+}
+

@@ -1,0 +1,92 @@
+/* Theme */
+
+// Base
+$color-set-1-bg: #fcfcfc;
+$color-set-1-fg: #333;
+$color-set-1-fg-2: #ee6e73;
+$color-set-1-fg-3: #26a69a;
+$color-set-1-fg-4: #ccc;
+
+// Primary
+$color-set-2-bg: #ee6e73;
+$color-set-2-fg: #fff;
+
+// Secondary
+$color-set-3-bg: #26a69a;
+$color-set-3-fg: #fff;
+
+$color-set-4-bg: #e8e6e3;
+$color-set-4-fg: #555;
+
+
+@mixin set-color($bg, $fg) {
+  background-color: $bg;
+  color: $fg;
+}
+
+@mixin btn-color-set($bg, $fg) {
+  background-color: $bg;
+  color: $fg; 
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+
+  &:active {
+    background-color: darken($bg, 15%);
+  }
+}
+
+@mixin set-gradient-color($start, $end, $fg) {
+  @include background-image(linear-gradient($start, $end));
+  color: $fg;
+}
+
+
+a {
+  color: $color-set-2-fg;  
+}
+
+// Color set primary
+.color-set-base,
+.color-set-1 {
+  @include set-color($color-set-1-bg, $color-set-1-fg);
+}
+
+.color-set-primary,
+.color-set-2 {
+  @include set-color($color-set-2-bg, $color-set-2-fg);
+}
+
+.color-set-secondary,
+.color-set-3 {
+  @include set-color($color-set-3-bg, $color-set-3-fg);
+}
+
+.color-set-4 {
+  @include set-color($color-set-4-bg, $color-set-4-fg);
+}
+
+.base-link {
+  @include link-colors($color-set-1-fg-3, darken($color-set-1-fg-3, 5), darken($color-set-1-fg-3, 10), darken($color-set-1-fg-3, 10), darken($color-set-1-fg-3, 5));
+}
+
+.base-fg-2 {
+  color: #ee6e73;
+}
+
+.base-fg-3 {
+  color: #26a69a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
