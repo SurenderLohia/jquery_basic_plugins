@@ -128,29 +128,67 @@
 						</div>
 						<div class="demo-tab-con tab-scss">
 							<pre class="brush: sass">
+								/* Submenu */
+
+								//Globel Dependency
+								@import "compass/utilities";
+								@import "compass/css3";
+
+								// colors
+								$color-set-3-bg: #26a69a;
+								$color-set-3-fg: #fff;
+
+								/* clearfix
+								   by Nicolas Gallagher
+								   http://nicolasgallagher.com/micro-clearfix-hack/
+								*/
+								.cf:before, .cf:after {
+								  display:table;
+								  content:" ";
+								}
+								.cf:after {
+								  clear:both;
+								}
+
+								.cf {
+								    *zoom:1;    
+								}
+
+
+								.color-set-3 {
+								  background-color: $color-set-3-bg;
+								  color: $color-set-3-fg;
+								}
+
+								// For tranition
+								.trans {
+								  @include transition(all 200ms ease);
+								}
+
 								/* main-nav */
 								.main-nav {
 								  @extend .cf;
-								  @extend .color-set-secondary;
+								  @extend .color-set-3;
 								  height: 40px;
 								}
 
 								.main-nav-item {
-								  @extend .left;
-								  @extend .relative;
+								  float: left;
+								  position: relative;
+								}
 
-								  .main-nav-link,
-								  .sub-menu-link  {
+								.main-nav-link,
+								.sub-menu-link  {
 								    &.active {
 								      background-color: $color-set-3-fg;
 								      color: $color-set-3-bg;
 								    }  
 								  }
-								}
+
 
 								.main-nav-link,
 								.sub-menu-link {
-								  @extend .block;
+								  display: block;
 								  @extend .trans;
 								  
 								  font-size: 14px;
@@ -165,46 +203,92 @@
 								}
 
 								.sub-menu {
-								  @extend .color-set-secondary;
-								  @extend .absolute;
-								  @extend .hide;
+								  @extend .color-set-3;
 								  @extend .trans;
-								  
 
+								  position: absolute;
+								  display: none;
 								  top: 40px;
 								  left: 0;
 
 								  &.show {
-								    @extend .show;
+								    display: block;
 								  }
 								}
 							</pre>
 						</div>
 						<div class="demo-tab-con tab-css">
 							<pre class="brush: css">
-							/* main-nav */
-							.main-nav { height: 40px; }
+								/* Submenu */
+								/* clearfix
+								   by Nicolas Gallagher
+								   http://nicolasgallagher.com/micro-clearfix-hack/
+								*/
+								.cf:before, .main-nav:before, .cf:after, .main-nav:after {
+								  display: table;
+								  content: " ";
+								}
 
-							.main-nav-item .main-nav-link.active,
-							.main-nav-item .sub-menu-link.active { 
-							 	background-color: white; 
-							 	color: #26a69a; 
-							 }
+								.cf:after, .main-nav:after {
+								  clear: both;
+								}
 
-							.main-nav-link, 
-							.sub-menu-link { 
-								font-size: 14px; 
-								line-height: 40px; 
-								color: white; padding: 0 15px; 
-							}
+								.cf, .main-nav {
+								  *zoom: 1;
+								}
 
-							.main-nav-link:hover, 
-							.sub-menu-link:hover { 
-								background-color: white; color: #26a69a; 
-							}
-							.sub-menu { 
-								top: 40px; left: 0; 
-							}	
+								.color-set-3, .main-nav, .sub-menu {
+								  background-color: #26a69a;
+								  color: white;
+								}
+
+								.trans, .main-nav-link,
+								.sub-menu-link, .sub-menu {
+								  -webkit-transition: all 200ms ease;
+								  -moz-transition: all 200ms ease;
+								  -o-transition: all 200ms ease;
+								  transition: all 200ms ease;
+								}
+
+								/* main-nav */
+								.main-nav {
+								  height: 40px;
+								}
+
+								.main-nav-item {
+								  float: left;
+								  position: relative;
+								}
+
+								.main-nav-link.active,
+								.sub-menu-link.active {
+								  background-color: white;
+								  color: #26a69a;
+								}
+
+								.main-nav-link,
+								.sub-menu-link {
+								  display: block;
+								  font-size: 14px;
+								  line-height: 40px;
+								  color: white;
+								  padding: 0 15px;
+								}
+								.main-nav-link:hover,
+								.sub-menu-link:hover {
+								  background-color: white;
+								  color: #26a69a;
+								}
+
+								.sub-menu {
+								  position: absolute;
+								  display: none;
+								  top: 40px;
+								  left: 0;
+								}
+								.sub-menu.show {
+								  display: block;
+								}
 							</pre>
 						</div>
 						<div class="demo-tab-con tab-js">
@@ -424,7 +508,7 @@
 								.eq-box-in,
 								.eq-box-in-res {
 								  border: 1px solid #ccc;
-								  background-color:#fff;
+								  background-color: #fff;
 								  padding: 0 15px;
 								}
 
@@ -435,7 +519,7 @@
 								    margin-right: 0;
 								    margin-bottom: 20px;
 								  }
-								}	
+								}
 							</pre>
 						</div>
 						<div class="demo-tab-con tab-js">

@@ -1,3 +1,5 @@
+/* Submenu */
+
 //Globel Dependency
 @import "compass/utilities";
 @import "compass/css3";
@@ -6,7 +8,10 @@
 $color-set-3-bg: #26a69a;
 $color-set-3-fg: #fff;
 
-/* clearfix */
+/* clearfix
+   by Nicolas Gallagher
+   http://nicolasgallagher.com/micro-clearfix-hack/
+*/
 .cf:before, .cf:after {
   display:table;
   content:" ";
@@ -25,7 +30,7 @@ $color-set-3-fg: #fff;
   color: $color-set-3-fg;
 }
 
-// For tranition
+// For transition
 .trans {
   @include transition(all 200ms ease);
 }
