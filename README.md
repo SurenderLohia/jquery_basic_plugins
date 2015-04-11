@@ -16,21 +16,21 @@ Create basic jQuery plugin, for commonly used in website. And add the demo and s
 
 New to create jQuery plugin (checkout the below link):
 
-https://learn.jquery.com/plugins/basic-plugin-creation/
+[jQuery-basic-plugin-creation](https://learn.jquery.com/plugins/basic-plugin-creation/)
 
 ##### For Using Sass (compass)
 
 Compass is a ruby gem so you need install ruby.
 
-$ sudo apt-get install ruby
+> $ sudo apt-get install ruby
 
-$ sudo apt-get install compass 
+> $ sudo apt-get install compass 
 
 New to sass | compass (checkout the below link):
 
-http://sass-lang.com/
+[sass](http://sass-lang.com/)
 
-http://compass-style.org/
+[compass](http://compass-style.org/)
 
 #### Happy Coding...
 
@@ -38,13 +38,10 @@ http://compass-style.org/
 Note: Sass based developtment is not compulsory, you may write pure css also for that create new css file for your plugin and include in html.
 
 
-
-
 Authors:
 
-Surender Lohia
-
-Add your name
+* Surender Lohia
+* Add your name
 
 
 
