@@ -1,0 +1,23 @@
+/* clearfix */
+.cf:before, .main-nav:before, .cf:after, .main-nav:after { display: table; content: " "; }
+
+.cf:after, .main-nav:after { clear: both; }
+
+.cf, .main-nav { *zoom: 1; }
+
+.color-set-3, .main-nav, .sub-menu { background-color: #26a69a; color: white; }
+
+.trans, .main-nav-link, .sub-menu-link, .sub-menu { -webkit-transition: all 200ms ease; -moz-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease; }
+
+/* main-nav */
+.main-nav { height: 40px; }
+
+.main-nav-item { float: left; position: relative; }
+
+.main-nav-link.active, .sub-menu-link.active { background-color: white; color: #26a69a; }
+
+.main-nav-link, .sub-menu-link { display: block; font-size: 14px; line-height: 40px; color: white; padding: 0 15px; }
+.main-nav-link:hover, .sub-menu-link:hover { background-color: white; color: #26a69a; }
+
+.sub-menu { position: absolute; display: none; top: 40px; left: 0; }
+.sub-menu.show { display: block; }

@@ -1,6 +1,12 @@
-/* demo-ct */
-.example,
+/* demo */
 .demo-ct {
+  @extend .wrap-in;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom:2px dashed $color-set-1-fg-4;
+}
+
+.example {
   margin-bottom: 20px;
 }
 

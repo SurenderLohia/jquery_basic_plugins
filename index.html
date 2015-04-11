@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Help Desk Software Pricing &amp; Plans | 30 Day Free Help Desk Trial</title>
+		<title>JQuery Basic Plugins</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Css -->
@@ -30,225 +30,493 @@
 			
 			<div class="demo-ct">
 				<h2>Submenu</h2>
-				<h3>Example</h3>
+				<h3>Submenu - Example</h3>
 				<div class="demo">
 					<ul class="main-nav">
-							<li class="main-nav-item">
-								<a class="main-nav-link" href="#">Menu-Item-1</a>
-							</li>
-							<li class="main-nav-item">
-								<a class="main-nav-link main-nav-link-has-submenu" href="#">Menu-Item-2</a>
-								<ul class="sub-menu">
-									<li class="sub-menu-item">
-										<a class="sub-menu-link">Sub-menu-1</a>
-									</li>
-									<li class="sub-menu-item">
-										<a class="sub-menu-link">Sub-menu-1</a>
-									</li>
-									<li class="sub-menu-item">
-										<a class="sub-menu-link">Sub-menu-1</a>
-									</li>
-								</ul>
-							</li>
-							<li class="main-nav-item">
-								<a class="main-nav-link" href="#">Menu-Item-3</a>
-							</li>
-							<li class="main-nav-item">
-								<a class="main-nav-link main-nav-link-has-submenu" href="#">Menu-Item-4</a>
-								<ul class="sub-menu">
-									<li class="sub-menu-item">
-										<a class="sub-menu-link">Sub-menu-1</a>
-									</li>
-									<li class="sub-menu-item">
-										<a class="sub-menu-link">Sub-menu-1</a>
-									</li>
-									<li class="sub-menu-item">
-										<a class="sub-menu-link">Sub-menu-1</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<h3>Code</h3>
-					<div class="demo-tab-ct">
-						<ul class="demo-tab-nav">
-							<li class="demo-tab-nav-item">
-								<a class="demo-tab-nav-link active" href="#tab-html">HTML</a>
-							</li>
-							<li class="demo-tab-nav-item">
-								<a class="demo-tab-nav-link" href="#tab-scss">SCSS</a>
-							</li>
-							<li class="demo-tab-nav-item">
-								<a class="demo-tab-nav-link" href="#tab-css">CSS</a>
-							</li>
-							<li class="demo-tab-nav-item">
-								<a class="demo-tab-nav-link" href="#tab-js">JavaScript</a>
-							</li>
-						</ul>
-						<div class="demo-tab-con-ct">
-							<div class="demo-tab-con tab-html show">
-								<pre class="brush: html">
-								&lt;ul class=&quot;main-nav&quot;&gt;
-									&lt;li class=&quot;main-nav-item&quot;&gt;
-										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-1&lt;/a&gt;
-									&lt;/li&gt;
-									&lt;li class=&quot;main-nav-item&quot;&gt;
-										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-2&lt;/a&gt;
-										&lt;ul class=&quot;sub-menu&quot;&gt;
-											&lt;li class=&quot;sub-menu-item&quot;&gt;
-												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
-											&lt;/li&gt;
-											&lt;li class=&quot;sub-menu-item&quot;&gt;
-												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
-											&lt;/li&gt;
-											&lt;li class=&quot;sub-menu-item&quot;&gt;
-												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
-											&lt;/li&gt;
-										&lt;/ul&gt;
-									&lt;/li&gt;
-									&lt;li class=&quot;main-nav-item&quot;&gt;
-										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-3&lt;/a&gt;
-									&lt;/li&gt;
-									&lt;li class=&quot;main-nav-item&quot;&gt;
-										&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-4&lt;/a&gt;
-										&lt;ul class=&quot;sub-menu&quot;&gt;
-											&lt;li class=&quot;sub-menu-item&quot;&gt;
-												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
-											&lt;/li&gt;
-											&lt;li class=&quot;sub-menu-item&quot;&gt;
-												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
-											&lt;/li&gt;
-											&lt;li class=&quot;sub-menu-item&quot;&gt;
-												&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
-											&lt;/li&gt;
-										&lt;/ul&gt;
-									&lt;/li&gt;
-								&lt;/ul&gt;
-								</pre>
-							</div>
-							<div class="demo-tab-con tab-scss">
-								<pre class="brush: sass">
-									/* main-nav */
-									.main-nav {
-									  @extend .cf;
-									  @extend .color-set-secondary;
-									  height: 40px;
-									}
-
-									.main-nav-item {
-									  @extend .left;
-									  @extend .relative;
-
-									  .main-nav-link,
-									  .sub-menu-link  {
-									    &.active {
-									      background-color: $color-set-3-fg;
-									      color: $color-set-3-bg;
-									    }  
-									  }
-									}
-
-									.main-nav-link,
-									.sub-menu-link {
-									  @extend .block;
-									  @extend .trans;
-									  
-									  font-size: 14px;
-									  line-height: 40px;
-									  color: $color-set-3-fg;
-									  padding: 0 15px;
-
-									  &:hover {
-									    background-color: $color-set-3-fg;
-									    color: $color-set-3-bg;
-									  }
-									}
-
-									.sub-menu {
-									  @extend .color-set-secondary;
-									  @extend .absolute;
-									  @extend .hide;
-									  @extend .trans;
-									  
-
-									  top: 40px;
-									  left: 0;
-
-									  &.show {
-									    @extend .show;
-									  }
-									}
-								</pre>
-							</div>
-							<div class="demo-tab-con tab-css">
-								<pre class="brush: css">
+						<li class="main-nav-item">
+							<a class="main-nav-link" href="#">Menu-Item-1</a>
+						</li>
+						<li class="main-nav-item">
+							<a class="main-nav-link main-nav-link-has-submenu" href="#">Menu-Item-2</a>
+							<ul class="sub-menu">
+								<li class="sub-menu-item">
+									<a class="sub-menu-link">Sub-menu-1</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link">Sub-menu-1</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link">Sub-menu-1</a>
+								</li>
+							</ul>
+						</li>
+						<li class="main-nav-item">
+							<a class="main-nav-link" href="#">Menu-Item-3</a>
+						</li>
+						<li class="main-nav-item">
+							<a class="main-nav-link main-nav-link-has-submenu" href="#">Menu-Item-4</a>
+							<ul class="sub-menu">
+								<li class="sub-menu-item">
+									<a class="sub-menu-link">Sub-menu-1</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link">Sub-menu-1</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link">Sub-menu-1</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<h3>Submenu - Code</h3>
+				<div class="demo-tab-ct">
+					<ul class="demo-tab-nav">
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link active" href="#tab-html">HTML</a>
+						</li>
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link" href="#tab-scss">SCSS</a>
+						</li>
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link" href="#tab-css">CSS</a>
+						</li>
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link" href="#tab-js">JavaScript</a>
+						</li>
+					</ul>
+					<div class="demo-tab-con-ct">
+						<div class="demo-tab-con tab-html show">
+							<pre class="brush: html">
+							&lt;ul class=&quot;main-nav&quot;&gt;
+								&lt;li class=&quot;main-nav-item&quot;&gt;
+									&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-1&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class=&quot;main-nav-item&quot;&gt;
+									&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-2&lt;/a&gt;
+									&lt;ul class=&quot;sub-menu&quot;&gt;
+										&lt;li class=&quot;sub-menu-item&quot;&gt;
+											&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+										&lt;/li&gt;
+										&lt;li class=&quot;sub-menu-item&quot;&gt;
+											&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+										&lt;/li&gt;
+										&lt;li class=&quot;sub-menu-item&quot;&gt;
+											&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+										&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/li&gt;
+								&lt;li class=&quot;main-nav-item&quot;&gt;
+									&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-3&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class=&quot;main-nav-item&quot;&gt;
+									&lt;a class=&quot;main-nav-link&quot; href=&quot;#&quot;&gt;Menu-Item-4&lt;/a&gt;
+									&lt;ul class=&quot;sub-menu&quot;&gt;
+										&lt;li class=&quot;sub-menu-item&quot;&gt;
+											&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+										&lt;/li&gt;
+										&lt;li class=&quot;sub-menu-item&quot;&gt;
+											&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+										&lt;/li&gt;
+										&lt;li class=&quot;sub-menu-item&quot;&gt;
+											&lt;a class=&quot;sub-menu-link&quot;&gt;Sub-menu-1&lt;/a&gt;
+										&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+							</pre>
+						</div>
+						<div class="demo-tab-con tab-scss">
+							<pre class="brush: sass">
 								/* main-nav */
-								.main-nav { height: 40px; }
-
-								.main-nav-item .main-nav-link.active,
-								.main-nav-item .sub-menu-link.active { 
-								 	background-color: white; 
-								 	color: #26a69a; 
-								 }
-
-								.main-nav-link, 
-								.sub-menu-link { 
-									font-size: 14px; 
-									line-height: 40px; 
-									color: white; padding: 0 15px; 
+								.main-nav {
+								  @extend .cf;
+								  @extend .color-set-secondary;
+								  height: 40px;
 								}
 
-								.main-nav-link:hover, 
-								.sub-menu-link:hover { 
-									background-color: white; color: #26a69a; 
+								.main-nav-item {
+								  @extend .left;
+								  @extend .relative;
+
+								  .main-nav-link,
+								  .sub-menu-link  {
+								    &.active {
+								      background-color: $color-set-3-fg;
+								      color: $color-set-3-bg;
+								    }  
+								  }
 								}
-								.sub-menu { 
-									top: 40px; left: 0; 
-								}	
-								</pre>
-							</div>
-							<div class="demo-tab-con tab-js">
-								<pre class="brush: js">
-									// Submenu
-									(function($) {
-										$.fn.submenu = function() {
-											var obj = $(this),
-												submenu = obj.parent().find('ul');
 
-											function toggleSubMenu(e) {
-												e.preventDefault();
-												var $elm = $(this),
-													$elmSubmenu = $elm.parent().find('ul');
+								.main-nav-link,
+								.sub-menu-link {
+								  @extend .block;
+								  @extend .trans;
+								  
+								  font-size: 14px;
+								  line-height: 40px;
+								  color: $color-set-3-fg;
+								  padding: 0 15px;
 
-												if(!$elm.hasClass('active')) {
-													if(obj.hasClass('active')) {
-														obj.removeClass('active');
-														submenu.removeClass('show');
-													}
+								  &:hover {
+								    background-color: $color-set-3-fg;
+								    color: $color-set-3-bg;
+								  }
+								}
 
-													$elm.addClass('active');
-													$elmSubmenu.addClass('show');
-												} else {
-													$elm.removeClass('active');
-													$elmSubmenu.removeClass('show');
+								.sub-menu {
+								  @extend .color-set-secondary;
+								  @extend .absolute;
+								  @extend .hide;
+								  @extend .trans;
+								  
+
+								  top: 40px;
+								  left: 0;
+
+								  &.show {
+								    @extend .show;
+								  }
+								}
+							</pre>
+						</div>
+						<div class="demo-tab-con tab-css">
+							<pre class="brush: css">
+							/* main-nav */
+							.main-nav { height: 40px; }
+
+							.main-nav-item .main-nav-link.active,
+							.main-nav-item .sub-menu-link.active { 
+							 	background-color: white; 
+							 	color: #26a69a; 
+							 }
+
+							.main-nav-link, 
+							.sub-menu-link { 
+								font-size: 14px; 
+								line-height: 40px; 
+								color: white; padding: 0 15px; 
+							}
+
+							.main-nav-link:hover, 
+							.sub-menu-link:hover { 
+								background-color: white; color: #26a69a; 
+							}
+							.sub-menu { 
+								top: 40px; left: 0; 
+							}	
+							</pre>
+						</div>
+						<div class="demo-tab-con tab-js">
+							<pre class="brush: js">
+								// Submenu
+								(function($) {
+									$.fn.submenu = function() {
+										var obj = $(this),
+											submenu = obj.parent().find('ul');
+
+										function toggleSubMenu(e) {
+											e.preventDefault();
+											var $elm = $(this),
+												$elmSubmenu = $elm.parent().find('ul');
+
+											if(!$elm.hasClass('active')) {
+												if(obj.hasClass('active')) {
+													obj.removeClass('active');
+													submenu.removeClass('show');
 												}
+
+												$elm.addClass('active');
+												$elmSubmenu.addClass('show');
+											} else {
+												$elm.removeClass('active');
+												$elmSubmenu.removeClass('show');
 											}
+										}
 
-											obj.on('click', toggleSubMenu);
-										};
+										obj.on('click', toggleSubMenu);
+									};
 
-									})(jQuery);
+								})(jQuery);
 
-									// Main js (trigger plugin in document ready event)
-									(function($) {
-										$('.main-nav-link').submenu();
-									})(jQuery);
-								</pre>
+								// Main js (trigger plugin in document ready event)
+								(function($) {
+									$('.main-nav-link').submenu();
+								})(jQuery);
+							</pre>
+						</div>
+					</div>
+				</div>
+			</div> <!-- demo-ct -->
+			<div class="demo-ct">
+				<h2>Equal Height column</h2>
+				<h3>Equal Height column - Example</h3>
+				<div class="demo">
+					<div class="cf">
+						<div class="eq-box">
+							<div class="eq-box-in">
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+						<div class="eq-box">
+							<div class="eq-box-in">
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								</p>
+							</div>
+						</div>
+						<div class="eq-box last">
+							<div class="eq-box-in">
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<h3>Equal Height column - Example: 2 (Responsive: Remove max height for all columns)</h3>
+				<div class="demo">
+					<div class="cf">
+						<div class="eq-box-res">
+							<div class="eq-box-in-res">
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</div>
+						</div>
+						<div class="eq-box-res">
+							<div class="eq-box-in-res">
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								</p>
+							</div>
+						</div>
+						<div class="eq-box-res last">
+							<div class="eq-box-in-res">
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3>Equal Height column - Code</h3>
+				<div class="demo-tab-ct">
+					<ul class="demo-tab-nav">
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link active" href="#tab-html">HTML</a>
+						</li>
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link" href="#tab-scss">SCSS</a>
+						</li>
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link" href="#tab-css">CSS</a>
+						</li>
+						<li class="demo-tab-nav-item">
+							<a class="demo-tab-nav-link" href="#tab-js">JavaScript</a>
+						</li>
+					</ul>
+					<div class="demo-tab-con-ct">
+						<div class="demo-tab-con tab-html show">
+							<pre class="brush: html">
+								&lt;div class=&quot;demo&quot;&gt;
+									&lt;div class=&quot;cf&quot;&gt;
+										&lt;div class=&quot;eq-box&quot;&gt;
+											&lt;div class=&quot;eq-box-in&quot;&gt;
+												&lt;p&gt;
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;eq-box&quot;&gt;
+											&lt;div class=&quot;eq-box-in&quot;&gt;
+												&lt;p&gt;
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+												&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;eq-box last&quot;&gt;
+											&lt;div class=&quot;eq-box-in&quot;&gt;
+												&lt;p&gt;
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+												&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+
+								<!-- Example - 2 (Responsive: Remove max height for one column) -->
+								&lt;h3&gt;Example - 2 (Responsive: Remove max height for one column)&lt;/h3&gt;
+								&lt;div class=&quot;demo&quot;&gt;
+									&lt;div class=&quot;cf&quot;&gt;
+										&lt;div class=&quot;eq-box-res&quot;&gt;
+											&lt;div class=&quot;eq-box-in-res&quot;&gt;
+												&lt;p&gt;
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;eq-box-res&quot;&gt;
+											&lt;div class=&quot;eq-box-in-res&quot;&gt;
+												&lt;p&gt;
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+												&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;div class=&quot;eq-box-res last&quot;&gt;
+											&lt;div class=&quot;eq-box-in-res&quot;&gt;
+												&lt;p&gt;
+													It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+												&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							</pre>
+						</div>
+						<div class="demo-tab-con tab-scss">
+							<pre class="brush: sass">
+								/* equal-height-box */
+								.eq-box,
+								.eq-box-res {
+								  float: left;
+								  width: 30%;
+								  margin-right: 5%;
+								}
+
+								.eq-box.last {
+								  margin-right: 0;
+								}
+
+								.eq-box-in,
+								.eq-box-in-res {
+								  border: 1px solid #ccc;
+								  background-color:#fff;
+								  padding: 0 15px;
+								}
+
+								@media (max-width: 767px) {
+								  .eq-box-res {
+								    float: none;
+								    width: auto;
+								    margin-right: 0;
+								    margin-bottom: 20px;
+								  }
+								}
+							</pre>
+						</div>
+						<div class="demo-tab-con tab-css">
+							<pre class="brush: css">
+								/* equal-height-box */
+								.eq-box,
+								.eq-box-res {
+								  float: left;
+								  width: 30%;
+								  margin-right: 5%;
+								}
+
+								.eq-box.last {
+								  margin-right: 0;
+								}
+
+								.eq-box-in,
+								.eq-box-in-res {
+								  border: 1px solid #ccc;
+								  background-color:#fff;
+								  padding: 0 15px;
+								}
+
+								@media (max-width: 767px) {
+								  .eq-box-res {
+								    float: none;
+								    width: auto;
+								    margin-right: 0;
+								    margin-bottom: 20px;
+								  }
+								}	
+							</pre>
+						</div>
+						<div class="demo-tab-con tab-js">
+							<pre class="brush: js">
+								// Equal height column
+								(function($) {
+									$.fn.eqBox = function(options) {
+										var settings = $.extend({
+											res: false,
+											mob: 768 // mobile breakpoint for one column 
+										}, options);
+
+										var o = this,
+											$o = $(o),
+											oLen = o.length,
+											maxH = 0,
+											curH = 0,
+											wWidth = $(window).width(),
+											$item,
+											i;
+
+										function getSetH() {
+											// Get max height
+											for(i = 0; i < oLen; i += 1) {
+												$item = $(o[i]);
+												curH = $item.height();
+												if(curH > maxH)  {
+													maxH = curH;
+												}
+											}
+
+											// Set max height
+											$o.height(maxH + 'px');
+										}
+
+										function removeEqH() {
+											$o.removeAttr('style');
+											console.log('removeEqH');
+										}
+
+										function funTrigger() {
+											if(!settings.res) {
+												getSetH();	
+											} else {
+												if(settings.mob < wWidth) {
+													getSetH();
+												}
+											}
+										}
+										
+										$(window).resize(function() {
+											wWidth = $(window).width();
+											console.log(wWidth);
+											removeEqH();
+											funTrigger();
+											
+										});
+
+										funTrigger();
+
+										return $o;
+									}
+								})(jQuery);
+
+								// Main js (trigger plugin in document ready event)
+								(function($) {
+									$('.eq-box-in').eqBox();
+
+									// For responsive
+									$('.eq-box-in-res').eqBox({
+										res: true
+									});
+								})(jQuery);
+							</pre>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /demo-ct -->
+		</div><!-- /wrap -->
+			
+
 		<!-- Js -->
 		<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
 		<script src="js/lib/jquery.js"></script>

@@ -1,26 +1,59 @@
+//Globel Dependency
+@import "compass/utilities";
+@import "compass/css3";
+
+// colors
+$color-set-3-bg: #26a69a;
+$color-set-3-fg: #fff;
+
+/* clearfix */
+.cf:before, .cf:after {
+  display:table;
+  content:" ";
+}
+.cf:after {
+  clear:both;
+}
+
+.cf {
+    *zoom:1;    
+}
+
+
+.color-set-3 {
+  background-color: $color-set-3-bg;
+  color: $color-set-3-fg;
+}
+
+// For tranition
+.trans {
+  @include transition(all 200ms ease);
+}
+
 /* main-nav */
 .main-nav {
   @extend .cf;
-  @extend .color-set-secondary;
+  @extend .color-set-3;
   height: 40px;
 }
 
 .main-nav-item {
-  @extend .left;
-  @extend .relative;
+  float: left;
+  position: relative;
+}
 
-  .main-nav-link,
-  .sub-menu-link  {
+.main-nav-link,
+.sub-menu-link  {
     &.active {
       background-color: $color-set-3-fg;
       color: $color-set-3-bg;
     }  
   }
-}
+
 
 .main-nav-link,
 .sub-menu-link {
-  @extend .block;
+  display: block;
   @extend .trans;
   
   font-size: 14px;
@@ -35,17 +68,16 @@
 }
 
 .sub-menu {
-  @extend .color-set-secondary;
-  @extend .absolute;
-  @extend .hide;
+  @extend .color-set-3;
   @extend .trans;
-  
 
+  position: absolute;
+  display: none;
   top: 40px;
   left: 0;
 
   &.show {
-    @extend .show;
+    display: block;
   }
 }
 

@@ -11,7 +11,9 @@
 // Modules
 @import "partials/demo";
 
-@import "partials/submenu";
+// Demo Module
+@import "demo/submenu";
+@import "demo/equal-height";
 
 // Helper
 @import "partials/helper";

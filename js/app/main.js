@@ -8,22 +8,29 @@ var app = app || {};
 		var tabBtns = $(this),
 			tabNav = tabBtns.parent().parent(),
 			curTabbtn,
-			curTabCon;
+			curTabCon,
+			curTabSet,
+			curTabNavSet;
+
+
 
 		function tabShowHide(e) {
 			e.preventDefault();
 
 			curTabBtn = $(this);
+			curTabSet = curTabBtn.closest('.demo-ct');
+			curTabNavSet = curTabBtn.closest('.demo-tab-nav');
+
 
 			if(!curTabBtn.hasClass('active')) {
 				curTabCon = curTabBtn.attr('href');
 				curTabCon = curTabCon.replace('#', '.');
 				
-				tabBtns.removeClass('active');
-				$tabCon.hide();
+				curTabNavSet.find(tabBtns).removeClass('active');
+				curTabSet.find($tabCon).hide();
 
 				curTabBtn.addClass('active');
-				$(curTabCon).fadeIn();
+				curTabSet.find($(curTabCon)).fadeIn();
 			}
 			
 		}
@@ -43,6 +50,10 @@ var app = app || {};
 		$('.demo-tab-nav-link').codeTab($('.demo-tab-con'));
 
 		$('.main-nav-link').submenu();
+		$('.eq-box-in').eqBox();
+		$('.eq-box-in-res').eqBox({
+			res: true
+		});
 	}
 
 	// jQuery Document ready event
